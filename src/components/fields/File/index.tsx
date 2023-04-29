@@ -4,6 +4,7 @@ import withRenderTableCell from "@src/components/Table/TableCell/withRenderTable
 
 import FileIcon from "@mui/icons-material/AttachFile";
 import DisplayCell from "./DisplayCell";
+import BasicContextMenuActions from "@src/components/Table/ContextMenu/BasicCellContextMenuActions";
 
 const EditorCell = lazy(
   () => import("./EditorCell" /* webpackChunkName: "EditorCell-File" */)
@@ -26,6 +27,7 @@ export const config: IFieldConfig = {
     disablePadding: true,
   }),
   SideDrawerField,
+  contextMenuActions: BasicContextMenuActions,
 };
 export default config;
 

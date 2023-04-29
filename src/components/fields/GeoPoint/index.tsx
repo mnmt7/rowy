@@ -5,6 +5,7 @@ import withRenderTableCell from "@src/components/Table/TableCell/withRenderTable
 
 import GeoPointIcon from "@mui/icons-material/PinDropOutlined";
 import DisplayCell from "./DisplayCell";
+import BasicContextMenuActions from "@src/components/Table/ContextMenu/BasicCellContextMenuActions";
 
 const SideDrawerField = lazy(
   () =>
@@ -37,5 +38,6 @@ export const config: IFieldConfig = {
       return null;
     }
   },
+  contextMenuActions: BasicContextMenuActions,
 };
 export default config;
